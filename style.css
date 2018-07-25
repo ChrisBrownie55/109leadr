@@ -37,8 +37,12 @@ header h1 > b {
   font-weight: bold;
 }
 
-header,
 section {
+  height: 100vh;
+  padding: 4rem 4rem;
+}
+
+header {
   height: 100vh;
   padding: 2rem 4rem;
 }
@@ -47,7 +51,7 @@ section {
   /* outline: solid 1px; */
 }
 
-.grey {
+.light-grey {
   color: #c3dfef;
 }
 
@@ -66,6 +70,10 @@ button {
   cursor: pointer;
 }
 
+.grey {
+  color: #555;
+}
+
 #phones-img {
   position: absolute;
   right: 10%;
@@ -82,4 +90,19 @@ button {
   #phones-img {
     display: none;
   }
+}
+
+.elevated {
+  box-shadow: 0px 0px 74px -14px rgba(0, 0, 0, 0.25);
+}
+
+#features .fas {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+#features > article {
+  border-radius: 0.15rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
 }
