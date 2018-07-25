@@ -5,6 +5,8 @@ a:hover {
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  margin: 0;
+  width: 100%;
 }
 
 header {
@@ -45,6 +47,7 @@ section {
 header {
   height: 100vh;
   padding: 2rem 4rem;
+  position: relative;
 }
 
 * {
@@ -92,17 +95,85 @@ button {
   }
 }
 
-.elevated {
-  box-shadow: 0px 0px 74px -14px rgba(0, 0, 0, 0.25);
-}
-
 #features .fas {
   font-size: 2em;
   margin-bottom: 1em;
 }
 #features > article {
+  cursor: pointer;
   border-radius: 0.15rem;
   display: flex;
   align-items: center;
   font-size: 0.8rem;
+  transition: box-shadow 0.25s ease-in-out;
+}
+#features > article:hover {
+  box-shadow: 0px 0px 74px -14px rgba(0, 0, 0, 0.25);
+}
+
+.video-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background-color: #5da1ce71;
+  color: white;
+  cursor: pointer;
+  min-height: 25rem !important;
+}
+.video-panel > img {
+  position: absolute;
+  object-fit: cover;
+  filter: blur(4px);
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+  left: -4px;
+  top: -4px;
+  z-index: -1;
+}
+
+.play-button {
+  border-radius: 50%;
+  border: solid 2px white;
+  height: 6rem;
+  width: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+.play-button > i {
+  font-size: 1.25rem;
+  color: white;
+}
+
+#video-explanation {
+  padding: 0;
+}
+#video-explanation > article:last-child {
+  background-color: #5da1ce;
+  color: white;
+  padding: 4rem;
+}
+#video-explanation h1 {
+  font-weight: 400;
+}
+
+.center-children {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.f-c {
+  flex-direction: column;
+}
+
+.m-b-4 {
+  margin-bottom: 4rem;
+}
+
+.l-h-2 {
+  line-height: 2rem;
 }
