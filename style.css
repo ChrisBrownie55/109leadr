@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster+Two");
+
 a:hover {
   text-decoration: none;
 }
@@ -40,12 +42,12 @@ header h1 > b {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
   padding: 4rem 4rem;
 }
 
 header {
-  height: 100vh;
+  min-height: 100vh;
   padding: 2rem 4rem;
   position: relative;
 }
@@ -169,6 +171,9 @@ button {
 .f-c {
   flex-direction: column;
 }
+.f-r {
+  flex-direction: row;
+}
 
 .m-b-4 {
   margin-bottom: 4rem;
@@ -176,4 +181,44 @@ button {
 
 .l-h-2 {
   line-height: 2rem;
+}
+
+.logo {
+  font-family: Lobster Two;
+}
+
+footer {
+  background-color: #364049;
+  color: white;
+  padding: 4rem 2rem;
+  min-height: 20rem !important;
+  margin-top: auto;
+}
+footer .phones .fab {
+  font-size: 2.5rem;
+}
+footer .fab:first-child {
+  margin-right: 2rem;
+}
+footer .media a {
+  padding: 0.5rem;
+  background-color: #414e57;
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+footer .media .fab {
+  font-size: 1.5rem;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  footer > article:nth-child(2),
+  footer > article:first-child {
+    margin-bottom: 1rem !important;
+  }
 }
