@@ -93,18 +93,25 @@ button {
   }
 }
 
-#features .fas {
-  font-size: 2em;
-  margin-bottom: 1em;
+#features img {
+  height: 2rem;
+  margin-bottom: 2em;
 }
 #features > article {
   cursor: pointer;
   border-radius: 0.15rem;
   display: flex;
   align-items: center;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   transition: box-shadow 0.25s ease-in-out;
-  padding: 2.15rem;
+  padding: 4rem;
+  color: #555;
+}
+#features > article h4 {
+  font-size: 1.5em;
+}
+#features > article p {
+  color: #999;
 }
 #features > article:hover {
   box-shadow: 0px 0px 74px -14px rgba(0, 0, 0, 0.25);
