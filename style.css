@@ -1,0 +1,85 @@
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+header {
+  background: rgb(94, 162, 207);
+  background: linear-gradient(
+    0deg,
+    rgba(94, 162, 207, 1) 0%,
+    rgba(150, 207, 234, 1) 100%
+  );
+}
+header * {
+  color: white;
+}
+header > a {
+  font-weight: 600;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  height: fit-content;
+}
+header > a:hover {
+  color: #eee;
+}
+
+header h1 {
+  font-weight: lighter;
+  font-size: 3.5rem;
+  padding-left: 0 !important;
+}
+header h1 > b {
+  font-weight: bold;
+}
+
+header,
+section {
+  height: 100vh;
+  padding: 2rem 4rem;
+}
+
+* {
+  /* outline: solid 1px; */
+}
+
+.grey {
+  color: #c3dfef;
+}
+
+.h-btn {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #609abf;
+  border: none;
+  border-radius: 3rem;
+  margin-top: 2rem;
+}
+.h-btn > i {
+  margin-right: 0.3rem;
+}
+button {
+  cursor: pointer;
+}
+
+#phones-img {
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  width: 25rem;
+  height: auto;
+}
+@media (max-width: 991px) {
+  .h-btn:not(:first-of-type) {
+    margin-top: 0.25rem;
+  }
+}
+@media (max-width: 1024px) {
+  #phones-img {
+    display: none;
+  }
+}
