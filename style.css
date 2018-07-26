@@ -28,7 +28,7 @@ header > a {
   white-space: nowrap;
   height: fit-content;
 }
-header > a:hover {
+header a:hover {
   color: #eee;
 }
 
